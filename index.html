@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="generator__password__container">
+    <h2>Password Generator</h2>
+    <div class="generator__box">
+        <div class="generator__check">Your password</div>
+        <button class="generator__copy">Click to copy</button>
+    </div>
+        <div class="gn__value__range">
+                         Lenght: <span class="gn__par__value"></span><br>
+            <input type="range" class="range__line" min="4" value="8" max="32">
+            <br>
+            <span class="gn__par__value"></span>
+        </div>
+    <div class="generator__settings">
+        <div class="setting__upp">
+            <span>Include Uppercase</span>
+            <label class="switch">
+            <input type="checkbox" class="settings__upper">
+            <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="setting__low">
+            <span>Include Lowercase</span>
+            <label class="switch">
+            <input type="checkbox" class="settings__lower">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="setting__number">
+            <span>Include Numbers</span>
+            <label class="switch">
+            <input type="checkbox" class="settings__numbers">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="setting__symbol">
+            <span>Include Symbols</span>
+            <label class="switch">
+            <input type="checkbox" class="settings__symbols">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <div class="generator__render">
+        <button class="btn__render">GENERATE</button>
+    </div>
+</section>
+<script src="main.js"></script>
+</body>
+</html>
